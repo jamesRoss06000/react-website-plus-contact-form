@@ -7,11 +7,11 @@ class Projects extends Component {
     backend = [];
     frameworks = [];
     data = database.map(data => {
-        if (data.languages == 'HTML, CSS, JavaScript') {
+        if (data.languages === 'HTML, CSS, JavaScript') {
             this.frontend.push(data);
-        } else if (data.languages == 'PHP, SQL') {
+        } else if (data.languages === 'PHP, SQL') {
             this.backend.push(data);
-        } else if (data.languages == 'frameworks') {
+        } else if (data.languages === 'frameworks') {
             this.frameworks.push(data);
         }
     }

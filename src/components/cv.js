@@ -17,7 +17,7 @@ class Cv extends Component {
                     <p>Web and Web Mobile Developer, trained at 'La Grande Ecole du Numerique, Nice'</p>
                     <p>Native English speaker. I speak French to level C2.</p>
                     <p>Experienced in Planning, Management and Distribution.</p>
-                    <p>Writing hobbyist with several books published on <a style={{color: 'black'}} href='https://www.amazon.com/Serial-Killer-Murder-Trilogy-English-ebook/dp/B00BE97ONM' target='_blank'>Amazon.</a></p>
+                    <p>Writing hobbyist with several books published on <a style={{color: 'black'}} href='https://www.amazon.com/Serial-Killer-Murder-Trilogy-English-ebook/dp/B00BE97ONM' target='_blank' rel="noopener noreferrer">Amazon.</a></p>
                 </div>
                 <div className='rightSide'>
                     <u><h4>Coding Competences</h4></u>

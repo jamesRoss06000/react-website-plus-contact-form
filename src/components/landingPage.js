@@ -5,13 +5,12 @@ class LandingPage extends Component {
     render() {
         return (
             <div style={{ width: '100%', margin: 'auto' }}>
-                <Grid className='landing-grid'>
+                <Grid className='landing-grid' style={{paddingTop: '2em'}}>
                     <Cell col={12}>
-
                         <img src="https://4vnkta.db.files.1drv.com/y4mlVYYXLCcqv0xwDRZUQ626BgNiqw5pQ0vCTZut0HOGqO7Zk3q0JMham69t51TeAUfw9nfWhrDzZnyV8t67sR5_XNuC13V5CphQRQay22G7F1l-1231XSOm2WTF7xLttVcaUjoPJy32A52X4Vv4zL4N_1JjsXTDwZslf5SjB7w64-ouczzkqSljkgx8y63pYnaxvoHGkkHd3xRp_kDHG_9CA?width=3543&height=3543&cropmode=none"
                             alt="James-ROSS-couleurs" border="0" className='myAvatar' />
 
-                        <h2 style={{ fontSize: '25px', fontFamily: 'Edo', margin: 'auto' }}>
+                        <h2 style={{ fontSize: '25px', fontFamily: 'Anton', margin: 'auto' }}>
                             James Ross
                         </h2>
 

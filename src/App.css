@@ -115,13 +115,18 @@ div.mdl-tabs__tab-bar {
 .contact-grid {
     text-align: center;
     justify-content: center;
-    width: 80%;
-    height: 70%;
-    background: white;
-    color: black;
-    border: black 2px solid;
     margin-bottom: 20px;
     border-radius: 15px;
+}
+
+.contact-side {
+    margin: auto;
+    height: 100%;
+    background-color: black;
+    color: white;
+    opacity: .6;
+    width: 80%;
+    border-radius: 10px;
 }
 
 .contact-grid p {
@@ -135,8 +140,14 @@ div.mdl-tabs__tab-bar {
     margin: auto;
 }
 
+.contact-grid h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 contact-list ul li {
     display: flex;
+    padding: 5px
 }
 
 .mdl-list__item-primary-content img {
@@ -145,7 +156,7 @@ contact-list ul li {
 }
 
 .gridDirection {
-    padding: 10px 10px 10px 10px;
+    padding: 2em 10px 10px 10px;
     display: inline-flex;
 }
 
@@ -162,10 +173,11 @@ contact-list ul li {
     width: 69%;
     padding: 10px;
     height: 70%;
-    background: white;
-    color: black;
-    border: black 2px solid;
-    border-radius: 15px;
+    background-color: black;
+    color: white;
+    opacity: .6;
+    width: 85%;
+    border-radius: 10px;
 }
 
 .workText {
