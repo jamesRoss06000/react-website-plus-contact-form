@@ -29,11 +29,15 @@ class Projects extends Component {
                     <Card shadow={4} style={{ minWidth: '450', margin: 'auto' }}>
                         <CardTitle style={{ height: '250px', background: data.image }}></CardTitle>
                         <CardText>
-                            {data.name}
+                          <h4>{data.name}</h4>  
                         </CardText>
+                        <CardText>
+                            {data.description}
+                        </CardText>
+                        <br></br>
                         <CardActions border>
-                            <Button colored>GitHub</Button>
-                            <Button colored>Live Demo</Button>
+                            <Button colored><a style={{textDecoration: 'none'}} href={data.github} target='_blank' rel="noopener noreferrer">Github</a></Button>
+                            <Button colored><a style={{textDecoration: 'none'}} href={data.live} target='_blank' rel="noopener noreferrer">Live Demo</a></Button>
                         </CardActions>
                     </Card>
                 </div>
@@ -41,14 +45,18 @@ class Projects extends Component {
         } else if (this.state.activeTab === 2 && this.backend.length > 0) {
             return this.backend.map(data =>
                 <div className='cardDivs'>
-                    <Card shadow={4} style={{ minWidth: '450', margin: 'auto', background: data.image }}>
-                        <CardTitle style={{ height: '250px' }}>{data.name}</CardTitle>
+                    <Card shadow={4} style={{ minWidth: '450', margin: 'auto' }}>
+                        <CardTitle style={{ height: '250px', background: data.image }}></CardTitle>
+                        <CardText>
+                          <h4>{data.name}</h4>  
+                        </CardText>
                         <CardText>
                             {data.description}
                         </CardText>
+                        <br></br>
                         <CardActions border>
-                            <Button colored>GitHub</Button>
-                            <Button colored>Live Demo</Button>
+                            <Button colored><a style={{textDecoration: 'none'}} href={data.github} target='_blank' rel="noopener noreferrer">Github</a></Button>
+                            <Button colored><a style={{textDecoration: 'none'}} href={data.live} target='_blank' rel="noopener noreferrer">Live Demo</a></Button>
                         </CardActions>
                     </Card>
                 </div>
@@ -56,13 +64,18 @@ class Projects extends Component {
         } else if (this.state.activeTab === 3 && this.frameworks.length > 0) {
             return this.frameworks.map(data =>
                 <div className='cardDivs'>
-                    <Card shadow={4} style={{ minWidth: '450', margin: 'auto', background: data.image }}>
-                        <CardTitle style={{ height: '250px' }}>{data.name}</CardTitle>                        <CardText>
+                    <Card shadow={4} style={{ minWidth: '450', margin: 'auto' }}>
+                        <CardTitle style={{ height: '250px', background: data.image }}></CardTitle>
+                        <CardText>
+                          <h4>{data.name}</h4>  
+                        </CardText>
+                        <CardText>
                             {data.description}
                         </CardText>
+                        <br></br>
                         <CardActions border>
-                            <Button colored>GitHub</Button>
-                            <Button colored>Live Demo</Button>
+                            <Button colored><a style={{textDecoration: 'none'}} href={data.github} target='_blank' rel="noopener noreferrer">Github</a></Button>
+                            <Button colored><a style={{textDecoration: 'none'}} href={data.live} target='_blank' rel="noopener noreferrer">Live Demo</a></Button>
                         </CardActions>
                     </Card>
                 </div>

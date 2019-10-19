@@ -1,14 +1,16 @@
 let database = [
   {
     name: 'Trombinoscope',
-    image: 'url(https://i.ibb.co/g4mT3K5/html-Css-Js.jpg) center / cover',
-    description: 'Group project',
-    languages: 'HTML, CSS, JavaScript'
+    image: 'url(https://i.ibb.co/WsfhjXv/trombinoscope-Thumbnail.png) center / cover',
+    description: 'First group project at Web Dev course. Class photo book created using HTML, CSS and Javascript',
+    languages: 'HTML, CSS, JavaScript',
+    github: 'https://github.com/jamesRoss06000/trombinoscope',
+    live: 'https://trombinoscope-group-project.herokuapp.com/'
   },
   {
     name: 'CRUD System',
     image: 'url(https://i.ibb.co/g4mT3K5/html-Css-Js.jpg) center / cover',
-    description: 'Video game database',
+    description: 'Video game database using PHP, SGL, HTML and Boostrap',
     languages: 'PHP, SQL'
   },
   {

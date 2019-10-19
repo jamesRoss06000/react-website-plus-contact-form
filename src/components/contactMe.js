@@ -29,19 +29,19 @@ class ContactMe extends Component {
                                 <List>
                                     <ListItem>
                                         <ListItemContent style={{ fontSize: '25px', fontFamily: 'Anton' }}>
-                                            <a style={{ color: 'white', textDecoration: 'none'}} href='#'><img src='https://i.ibb.co/jwHSyd0/email-1.png' alt='email' />
+                                            <a style={{ color: 'white', textDecoration: 'none' }} href='/'><img src='https://i.ibb.co/jwHSyd0/email-1.png' alt='email' />
                                                 james_ross@outlook.fr</a>
                                         </ListItemContent>
                                     </ListItem>
                                     <ListItem>
                                         <ListItemContent style={{ fontSize: '25px', fontFamily: 'Anton' }}>
-                                            <a style={{ color: 'white', textDecoration: 'none'}} href='https://www.linkedin.com/in/jamesross06000/'><img src='https://i.ibb.co/THJNhDp/linkedin.png' alt='email' />
+                                            <a style={{ color: 'white', textDecoration: 'none' }} href='https://www.linkedin.com/in/jamesross06000/' target='_blank' rel="noopener noreferrer"><img src='https://i.ibb.co/THJNhDp/linkedin.png' alt='email' />
                                                 linkedin.com</a>
                                         </ListItemContent>
                                     </ListItem>
                                     <ListItem>
                                         <ListItemContent style={{ fontSize: '25px', fontFamily: 'Anton' }}>
-                                            <a style={{ color: 'white', textDecoration: 'none'}} href='https://github.com/jamesRoss06000'><img src='https://i.ibb.co/hVtB9LR/github-white.png' alt='email' />
+                                            <a style={{ color: 'white', textDecoration: 'none' }} href='https://github.com/jamesRoss06000' target='_blank' rel="noopener noreferrer"><img src='https://i.ibb.co/hVtB9LR/github-white.png' alt='email' />
                                                 github.com</a>
                                         </ListItemContent>
                                     </ListItem>
