@@ -61,8 +61,8 @@ let database = [
     image: 'url(https://i.ibb.co/g4mT3K5/html-Css-Js.jpg) center / cover',
     description: 'Example contact form for chinese restaurant.',
     languages: 'HTML, CSS, JavaScript',
-    github: 'https://github.com/jamesRoss06000/Online_CV',
-    live: 'https://cv-example-project.herokuapp.com/'
+    github: 'https://github.com/jamesRoss06000/contact-form',
+    live: 'https://contact-form-html-php.herokuapp.com/'
   },
 ]
 
