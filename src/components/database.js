@@ -1,15 +1,15 @@
 let database = [
   {
     name: 'Trombinoscope',
-    image: 'url(https://i.ibb.co/g4mT3K5/html-Css-Js.jpg) center / cover',
-    description: 'Group project at Web Dev course. Class "yearbook" created using HTML, CSS and Javascript.',
+    image: 'url(https://i.ibb.co/MkNb1FG/330x175trombinoscope.png) center / cover',
+    description: 'Group project. Class "yearbook" created using HTML, CSS and Javascript.',
     languages: 'HTML, CSS, JavaScript',
     github: 'https://github.com/jamesRoss06000/trombinoscope',
     live: 'https://trombinoscope-group-project.herokuapp.com/'
   },
   {
     name: 'CRUD System',
-    image: 'url(https://i.ibb.co/PWHn5Mt/phpSql.jpg) center / cover',
+    image: 'url(https://i.ibb.co/DKpbpv9/330x175-Crudjeux-Video.png) center / cover',
     description: 'Video game database using PHP, SQL, HTML and styled with Boostrap.',
     languages: 'PHP, SQL',
     github: 'https://github.com/jamesRoss06000/CRUD',
@@ -17,8 +17,8 @@ let database = [
   },
   {
     name: 'Absence Management app',
-    image: 'url(https://i.ibb.co/PWHn5Mt/phpSql.jpg) center / cover',
-    description: 'Partners with Ionic App under Frameworks tab. admin@admin.com, admin.',
+    image: 'url(https://i.ibb.co/tLDzdng/330x175-Crud-Abs-App.png) center / cover',
+    description: 'Part 1/2 (see framework tab). PHP, SQL, HTML, Bootstrap. admin@admin.com, admin',
     languages: 'PHP, SQL',
     github: 'https://github.com/jamesRoss06000/Attendance-App',
     live: 'https://attendance-ics.herokuapp.com/'
@@ -26,8 +26,8 @@ let database = [
 
   {
     name: 'Absence Management App',
-    image: 'url(https://i.ibb.co/wzjCkn3/ionic.png) center / cover',
-    description: 'Ionic Angular mobile app. User-side of Absence Management app listed in BACK END tab.',
+    image: 'url(https://i.ibb.co/PWcc1T4/absence.png) center / cover',
+    description: 'Part 2/2 User-side of Absence Management app listed in BACK END tab. Ionic Angular mobile app.',
     languages: 'frameworks',
     github: 'https://github.com/jamesRoss06000/Attendance-App/tree/master/myApp',
     // live: ''
@@ -42,7 +42,7 @@ let database = [
   },
   {
     name: 'Tabata',
-    image: 'url(https://i.ibb.co/wzjCkn3/ionic.png) center / cover',
+    image: 'url(https://i.ibb.co/Tt1FYTr/tabata.png) center / cover',
     description: 'Under construction: Ionic Angular mobile app for gym goers.',
     languages: 'frameworks',
     github: 'https://github.com/jamesRoss06000/Tabata',
@@ -50,7 +50,7 @@ let database = [
   },
   {
     name: 'Online CV Example',
-    image: 'url(https://i.ibb.co/g4mT3K5/html-Css-Js.jpg) center / cover',
+    image: 'url(https://i.ibb.co/0nK4VzR/330x175antoine.png) center / cover',
     description: 'School project: Create an online CV for a classmate.',
     languages: 'HTML, CSS, JavaScript',
     github: 'https://github.com/jamesRoss06000/Online_CV',
@@ -58,8 +58,8 @@ let database = [
   },
   {
     name: 'Contact Form',
-    image: 'url(https://i.ibb.co/g4mT3K5/html-Css-Js.jpg) center / cover',
-    description: 'Example contact form for chinese restaurant.',
+    image: 'url(https://i.ibb.co/gZj19ZF/330x175contact-Form.png) center / cover',
+    description: 'Example contact form for a non-existing chinese restaurant.',
     languages: 'HTML, CSS, JavaScript',
     github: 'https://github.com/jamesRoss06000/contact-form',
     live: 'https://contact-form-html-php.herokuapp.com/'
