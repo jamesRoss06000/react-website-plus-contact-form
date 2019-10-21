@@ -7,19 +7,6 @@ import * as serviceWorker from './serviceWorker';
 import 'react-mdl/extra/material.css';
 import 'react-mdl/extra/material.js';
 import { BrowserRouter } from 'react-router-dom';
-import * as firebase from 'firebase';
-
-var firebaseConfig = {
-  apiKey: "AIzaSyAY7eBnMt8rx1N_Jh_8LUGN32-AqXIGEGg",
-  authDomain: "react-website-afe39.firebaseapp.com",
-  databaseURL: "https://react-website-afe39.firebaseio.com",
-  projectId: "react-website-afe39",
-  storageBucket: "react-website-afe39.appspot.com",
-  messagingSenderId: "476724951106",
-  appId: "1:476724951106:web:36614d88723afae86215db",
-  measurementId: "G-FW123H0Q4P"
-};
-firebase.initializeApp(firebaseConfig);
 
 ReactDOM.render(
   <BrowserRouter>
