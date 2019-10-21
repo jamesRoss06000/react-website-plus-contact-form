@@ -51,7 +51,7 @@ let database = [
   {
     name: 'Online CV Example',
     image: 'url(https://i.ibb.co/0nK4VzR/330x175antoine.png) center / cover',
-    description: 'School project: Create an online CV for a classmate.',
+    description: 'School project: Create an online CV for a classmate. HTML, CSS, JavaScript',
     languages: 'HTML, CSS, JavaScript',
     github: 'https://github.com/jamesRoss06000/Online_CV',
     live: 'https://cv-example-project.herokuapp.com/'
@@ -59,7 +59,7 @@ let database = [
   {
     name: 'Contact Form',
     image: 'url(https://i.ibb.co/gZj19ZF/330x175contact-Form.png) center / cover',
-    description: 'Example contact form for a non-existing chinese restaurant.',
+    description: 'Example contact form for a non-existing chinese restaurant. HTML, CSS.',
     languages: 'HTML, CSS, JavaScript',
     github: 'https://github.com/jamesRoss06000/contact-form',
     live: 'https://contact-form-html-php.herokuapp.com/'
