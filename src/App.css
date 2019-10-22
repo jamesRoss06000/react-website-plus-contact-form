@@ -82,6 +82,7 @@ a.mdl-navigation__link {
 }
 
 .social-links a {
+    padding: 5px;
     width: 50px;
     height: 50px;
     color: white;
@@ -113,10 +114,15 @@ div.mdl-tabs__tab-bar {
 }
 
 .contact-grid {
+    display: flex;
     text-align: center;
-    justify-content: center;
+    /* justify-content: center; */
     margin-bottom: 20px;
     border-radius: 15px;
+}
+
+.contact-right, .contact-right {
+    width: 50%;
 }
 
 .contact-side {
@@ -145,9 +151,9 @@ div.mdl-tabs__tab-bar {
     margin-bottom: 0;
 }
 
-contact-list ul li {
+.contact-list ul li {
     display: flex;
-    padding: 5px
+    padding: 15px
 }
 
 .mdl-list__item-primary-content img {
@@ -204,14 +210,23 @@ contact-list ul li {
         flex-direction: column;
         justify-content: center;
     }
-}
-
-@media only screen and (max-width: 850px) {
     .contact-grid {
+        padding-top: 10px;
         height: 100%;
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
+    .contact-grid p {
+        padding-bottom: 20px;
+    }
+
+    .contact-right, .contact-right {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 850px) {
     .banner-text h1 {
         font-size: 20px;
         padding-top: 5px;
@@ -221,5 +236,11 @@ contact-list ul li {
     }
     .banner-text .showSpan {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .contact-list a {
+        font-size: 14px;
     }
 }

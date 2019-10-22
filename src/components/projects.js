@@ -75,7 +75,7 @@ class Projects extends Component {
                         <br></br>
                         <CardActions border>
                             <Button colored><a style={{textDecoration: 'none'}} href={data.github} target='_blank' rel="noopener noreferrer">Github</a></Button>
-                            <Button colored><a style={{textDecoration: 'none'}} href={data.live} target='_blank' rel="noopener noreferrer">Live Demo</a></Button>
+                            {/* <Button colored><a style={{textDecoration: 'none'}} href={data.live} target='_blank' rel="noopener noreferrer">Live Demo</a></Button> */}
                         </CardActions>
                     </Card>
                 </div>
