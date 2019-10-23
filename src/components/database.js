@@ -1,5 +1,21 @@
 let database = [
   {
+    name: 'Parallax Website',
+    image: 'url(https://i.ibb.co/NxmsXCf/soask.png) center / cover',
+    description: 'Personal project. A mock movie-pitch, read-only website created using HTML and CSS.',
+    languages: 'HTML, CSS, JavaScript',
+    github: 'https://github.com/jamesRoss06000/soask-the-movie',
+    live: 'https://jamesross06000.github.io/soask-the-movie/'
+  },
+  {
+    name: 'Contact Form',
+    image: 'url(https://i.ibb.co/gZj19ZF/330x175contact-Form.png) center / cover',
+    description: 'Example contact form for a non-existing chinese restaurant. HTML, CSS.',
+    languages: 'HTML, CSS, JavaScript',
+    github: 'https://github.com/jamesRoss06000/contact-form',
+    live: 'https://contact-form-html-php.herokuapp.com/'
+  },
+  {
     name: 'Trombinoscope',
     image: 'url(https://i.ibb.co/MkNb1FG/330x175trombinoscope.png) center / cover',
     description: 'Group project. Class "yearbook" created using HTML, CSS and Javascript.',
@@ -55,22 +71,6 @@ let database = [
     languages: 'HTML, CSS, JavaScript',
     github: 'https://github.com/jamesRoss06000/Online_CV',
     live: 'https://cv-example-project.herokuapp.com/'
-  },
-  {
-    name: 'Contact Form',
-    image: 'url(https://i.ibb.co/gZj19ZF/330x175contact-Form.png) center / cover',
-    description: 'Example contact form for a non-existing chinese restaurant. HTML, CSS.',
-    languages: 'HTML, CSS, JavaScript',
-    github: 'https://github.com/jamesRoss06000/contact-form',
-    live: 'https://contact-form-html-php.herokuapp.com/'
-  },
-  {
-    name: 'Parallax Website',
-    image: 'url(https://i.ibb.co/NxmsXCf/soask.png) center / cover',
-    description: 'Personal project. A mock movie-pitch, read-only website created using HTML and CSS.',
-    languages: 'HTML, CSS, JavaScript',
-    github: 'https://github.com/jamesRoss06000/soask-the-movie',
-    live: 'https://jamesross06000.github.io/soask-the-movie/'
   },
 ]
 
