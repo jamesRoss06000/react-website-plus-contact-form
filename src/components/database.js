@@ -64,6 +64,14 @@ let database = [
     github: 'https://github.com/jamesRoss06000/contact-form',
     live: 'https://contact-form-html-php.herokuapp.com/'
   },
+  {
+    name: '"Movie Pitch" Parallax Website',
+    image: 'url(https://i.ibb.co/NxmsXCf/soask.png) center / cover',
+    description: 'Personal project. A mock movie-pitch, read-only website created using HTML and CSS.',
+    languages: 'HTML, CSS, JavaScript',
+    github: 'https://github.com/jamesRoss06000/soask-the-movie',
+    live: 'https://jamesross06000.github.io/soask-the-movie/'
+  },
 ]
 
 export default database;
