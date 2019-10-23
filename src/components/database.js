@@ -65,7 +65,7 @@ let database = [
     live: 'https://contact-form-html-php.herokuapp.com/'
   },
   {
-    name: '"Movie Pitch" Parallax Website',
+    name: 'Parallax Website',
     image: 'url(https://i.ibb.co/NxmsXCf/soask.png) center / cover',
     description: 'Personal project. A mock movie-pitch, read-only website created using HTML and CSS.',
     languages: 'HTML, CSS, JavaScript',
