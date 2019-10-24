@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Education from './education.js';
 import Work from './work.js';
-import Skills from './skills.js';
+// import Skills from './skills.js';
 
 class Cv extends Component {
     render() {
@@ -17,38 +17,9 @@ class Cv extends Component {
                     <p>Web and Web Mobile Developer, trained at 'La Grande Ecole du Numerique, Nice'</p>
                     <p>Native English speaker. I speak French to level C2.</p>
                     <p>Experienced in Planning, Management and Distribution.</p>
-                    <p>Writing hobbyist with several books published on <a style={{color: 'black'}} href='https://www.amazon.com/Serial-Killer-Murder-Trilogy-English-ebook/dp/B00BE97ONM' target='_blank' rel="noopener noreferrer">Amazon.</a></p>
+                    <p>Writing hobbyist with several books published on <a style={{ color: 'black' }} href='https://www.amazon.com/Serial-Killer-Murder-Trilogy-English-ebook/dp/B00BE97ONM' target='_blank' rel="noopener noreferrer">Amazon.</a></p>
                 </div>
                 <div className='rightSide'>
-                    <u><h4>Coding Competences</h4></u>
-                    <Skills
-                        skill='Motivation'
-                        progress='100'
-                    />
-                    <Skills
-                        skill='HTML/CSS'
-                        progress='85'
-                    />
-                    <Skills
-                        skill='JavaScript'
-                        progress='77'
-                    />
-                    <Skills
-                        skill='PHP'
-                        progress='72'
-                    />
-                    <Skills
-                        skill='SQL'
-                        progress='71'
-                    />
-                    <Skills
-                        skill='React'
-                        progress='68'
-                    />
-                    <Skills
-                        skill='Ionic'
-                        progress='66'
-                    />
                     <u><h4>Education</h4></u>
                     <Education
                         place={<b>Grande Ecole du Numerique - </b>}

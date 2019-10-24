@@ -12,15 +12,13 @@ function App() {
           <Navigation>
             <Link to="/">Home</Link>
             <Link to="/projects">Projects</Link>
-            <Link to="/cv">CV</Link>
             <Link to="/contactme">Contact Me</Link>
           </Navigation>
         </Header>
-        <Drawer title="Menu" style={{background:'#D7DDE8'}}>
+        <Drawer title="" style={{background:'#D7DDE8'}}>
           <Navigation>
             <Link to="/">Home</Link>
             <Link to="/projects">Projects</Link>
-            <Link to="/cv">CV</Link>
             <Link to="/contactme">Contact Me</Link>
           </Navigation>
         </Drawer>
