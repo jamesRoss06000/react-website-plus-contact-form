@@ -94,7 +94,7 @@ a.mdl-navigation__link {
 }
 
 .social-links a {
-    padding: 5px;
+    padding: 13px;
     width: 50px;
     height: 50px;
     color: whitesmoke;
@@ -253,6 +253,11 @@ div.mdl-tabs__tab-bar {
 }
 
 @media only screen and (max-width: 850px) {
+
+    .social-links a {
+        padding: 5px;
+    }
+
     .banner-text h1 {
         font-size: 50px;
         padding-top: 5px;
