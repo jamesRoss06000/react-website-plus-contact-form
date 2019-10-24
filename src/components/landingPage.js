@@ -7,17 +7,13 @@ class LandingPage extends Component {
     render() {
         return (
             <div style={{ width: '100%', margin: 'auto' }}>
-                <div className='landing-grid' style={{ paddingTop: '2em' }}>
+                <div className='landing-grid'>
                     <Cell col={12}>
+                        <div className='banner-text'>
                         <img src="https://i.ibb.co/3c5K4Cy/MAD-4864.jpg"
                             alt="James-ROSS-couleurs" border="0" className='myAvatar' />
-
-                        <h2 style={{ fontSize: '25px', fontFamily: 'Anton', margin: 'auto' }}>
-                            James Ross
-                        </h2>
-
-                        <div className='banner-text'>
-                            <h1>Full Stack Web Developer</h1>
+                            <h1>James Ross</h1>
+                            <h2>Full Stack Web Developer</h2>
                             <br className='hideSpan'></br>
                             <span>HTML/CSS</span><span className='showSpan'>|</span>
                             <br className='hideSpan'></br>
@@ -52,7 +48,7 @@ class LandingPage extends Component {
                             </div>
                         </div>
                     </Cell>
-                    <div className='gridDirection' style={{textAlign: 'center'}}>
+                    <div className='gridDirection' style={{ textAlign: 'center' }}>
                         <div className='leftSide'>
                             <u><p>A little about me...</p></u>
                             <p>Web and Web Mobile Developer, trained at 'La Grande Ecole du Numerique, Nice'</p>
@@ -60,7 +56,7 @@ class LandingPage extends Component {
                             <p>Experienced in Planning, Management and Distribution.</p>
                             <p>Writing hobbyist with several books published on <a style={{ color: 'black' }} href='https://www.amazon.com/Serial-Killer-Murder-Trilogy-English-ebook/dp/B00BE97ONM' target='_blank' rel="noopener noreferrer">Amazon.</a></p>
                         </div>
-                        <div className='rightSide'>
+                        <div className='rightSide'>                            
                             <u><h4>Education</h4></u>
                             <Education
                                 place={<b>Grande Ecole du Numerique - </b>}
