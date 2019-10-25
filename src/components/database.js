@@ -46,7 +46,7 @@ let database = [
     description: 'Part 2/2 User-side of Absence Management app listed in BACK END tab. Ionic Angular mobile app.',
     languages: 'frameworks',
     github: 'https://github.com/jamesRoss06000/Attendance-App/tree/master/myApp',
-    live: 'https://jamesross06000.github.io/Attendance-App'
+    live: 'https://jamesross06000.github.io/ionic-attendance-app/'
   },
   {
     name: 'This Website',
