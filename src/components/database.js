@@ -57,6 +57,14 @@ let database = [
     live: 'jamesross.tech/'
   },
   {
+    name: 'To-do-list',
+    image: 'url(https://i.ibb.co/DYdK9G0/reactjs.png) center / cover',
+    description: 'Web app built using ReactJS, includes local storage so can used.',
+    languages: 'frameworks',
+    github: 'https://github.com/jamesRoss06000/to-do-list-react-js',
+    live: 'https://jamesross06000.github.io/to-do-list-react-js/'
+  },
+  {
     name: 'Tabata',
     image: 'url(https://i.ibb.co/Tt1FYTr/tabata.png) center / cover',
     description: 'Under construction: Ionic Angular mobile app for gym goers.',
