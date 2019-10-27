@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { List, ListItem, ListItemContent } from 'react-mdl';
+// import { List, ListItem, ListItemContent } from 'react-mdl';
 
 class ContactMe extends Component {
     render() {
