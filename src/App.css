@@ -213,6 +213,30 @@ div.mdl-tabs__tab-bar {
     font-weight: bolder;
 }
 
+.cvDiv {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-around;
+}
+
+button a {
+    background-color: whitesmoke;
+    color: black;
+    padding: 10px;
+    width: 300px;
+}
+
+.btnCV {
+    width: 300px;
+    background-color: whitesmoke;
+    color: black;
+}
+
+a {
+    cursor: pointer;
+    width: 300px;
+}
+
 @media only screen and (max-width: 1050px) {
     .banner-text {
         width: 85%;
@@ -280,6 +304,21 @@ div.mdl-tabs__tab-bar {
 }
 
 @media only screen and (max-width: 500px) {
+
+    .cvDiv {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .btnCV {
+        width: 100%;
+        height: 40px;
+        cursor: pointer;
+    }
+
+    .pdf-image {
+        display: none;
+    }
 
     .contact-list a {
         font-size: 14px;
