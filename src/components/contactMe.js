@@ -27,7 +27,7 @@ class ContactMe extends Component {
                             <hr />
                             <div className='contact-list'>
                                 <div className='form'>
-                                    <form action="treatment.php">
+                                    <form action="contact.php">
                                         <input type="text" name="name" placeholder="Your name..." />
                                         <input type="email" name="email" placeholder="Your email..." />
                                         <textarea id="subject" name="subject" placeholder="Message me..."></textarea>
