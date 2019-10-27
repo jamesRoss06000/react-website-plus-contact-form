@@ -1,22 +1,20 @@
 <?php
+if (isset($_POST['submit'])) {
 
-$userName = $_POST['name'];
-$userEmail = $_POST['email'];
-$userMessage = $_POST['message'];
+  $userName = $_POST['name'];
+  $userEmail = $_POST['email'];
+  $userMessage = $_POST['message'];
 
-$emailFrom = 'james_ross@outlook.fr';
+  $emailSubject = 'New Message From My Website Visitor';
+  $emailBody = 'Visitor Name: ' . $userName . '\n\n' .
+    'Visitor Email: ' . $userEmail . '\n\n' .
+    'Message: ' . $userMessage . '\n\n';
 
-$emailSubject = 'New Message From Visitor';
-$emailBody = 'Visitor Name: $userName.\n'.
-'Visitor Email: $userEmail.\n'.
-'Visitor Telephone: $userPhone.\n'. 
-'Message: $userMessage.\n';
+  $emailTo = 'james_ross@outlook.fr';
 
-$emailTo = 'james_ross@outlook.fr';
+  $headers = 'From: ' . $emailFrom . '\n\n';
 
-$headers = 'From: $emailFrom \r\n';
-$headers .= 'Reply-To: $userEmail \r\n';
+  mail($emailTo, $emailSubject, $emailBody, $headers);
 
-mail($emailTo,$emailSubject,$emailBody,$headers);
-
-header('Location: index.js');
+  header('Location: index.js/mailsent');
+}

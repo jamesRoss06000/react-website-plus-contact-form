@@ -30,7 +30,7 @@ class ContactMe extends Component {
                                     <form action="contact.php">
                                         <input type="text" name="name" placeholder="Your name..." />
                                         <input type="email" name="email" placeholder="Your email..." />
-                                        <textarea id="subject" name="subject" placeholder="Message me..."></textarea>
+                                        <textarea name="message" placeholder="Message me..."></textarea>
                                         <input type="submit" value="Submit" />
                                     </form>
                                 </div>
