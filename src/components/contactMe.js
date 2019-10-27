@@ -21,12 +21,20 @@ class ContactMe extends Component {
                     </div>
                     <div className='contact-right'>
                         <div className='contact-side'>
-                            <h2 style={{ fontSize: '25px', fontFamily: 'Anton' }}>
+                            <h2 style={{ fontSize: '25px', fontFamily: 'Anton', paddingTop: '10px'}}>
                                 Contact Me
                         </h2>
                             <hr />
                             <div className='contact-list'>
-                                <List>
+                                <div className='form'>
+                                    <form action="/action_page.php">
+                                        <input type="text" name="name" placeholder="Your name..." />
+                                        <input type="email" name="email" placeholder="Your email..." />
+                                        <textarea id="subject" name="subject" placeholder="Message me..."></textarea>
+                                        <input type="submit" value="Submit" />
+                                    </form>
+                                </div>
+                                {/* <List>
                                     <ListItem>
                                         <ListItemContent style={{ fontSize: '25px', fontFamily: 'Anton' }}>
                                             <a style={{ color: 'white', textDecoration: 'none' }} href='/'><img src='https://i.ibb.co/jwHSyd0/email-1.png' alt='email' />
@@ -45,7 +53,7 @@ class ContactMe extends Component {
                                                 github.com</a>
                                         </ListItemContent>
                                     </ListItem>
-                                </List>
+                                </List> */}
                             </div>
                         </div>
                     </div>
