@@ -215,26 +215,35 @@ div.mdl-tabs__tab-bar {
 
 .cvDiv {
     display: flex;
-    /* flex-direction: column; */
     justify-content: space-around;
 }
 
-button a {
+.cvDiv img {
+    margin-top: 7px;
+}
+
+button {
+    padding: 5px;
     background-color: whitesmoke;
     color: black;
     padding: 10px;
-    width: 300px;
 }
 
 .btnCV {
-    width: 300px;
+    width: 100%;
+    height: 225px;
     background-color: whitesmoke;
     color: black;
+    text-align: center;
 }
 
-a {
+.cvDiv a {
     cursor: pointer;
     width: 300px;
+    height: 225px;
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 15px;
 }
 
 @media only screen and (max-width: 1050px) {
@@ -307,7 +316,13 @@ a {
 
     .cvDiv {
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: space-between;
+    }
+    .cvDiv a {
+        height: 50px;
+        width: 100%;
+        border: black 1px solid;
+        border-radius: 0px;
     }
 
     .btnCV {

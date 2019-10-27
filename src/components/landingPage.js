@@ -58,11 +58,11 @@ class LandingPage extends Component {
                         </div>
                         <div className='rightSide'>
                             <div className='cvDiv'>
-                                <button className='btn btnCV'><a href="https://1drv.ms/b/s!AkHwqNuAoM_PjqU3aXbwrhuQX_oeOQ?e=rq55Ha" rel='noopener noreferrer'
-                                    target='_blank'>Download my CV in English</a></button>
-                                <img className='pdf-image' src={require('./pdf-image.jpg')} style={{maxWidth: '300px'}} alt='PDF-logo' />
-                                <button className='btn btnCV'><a href="https://1drv.ms/b/s!AkHwqNuAoM_PjqU409Ol9MBCi_SrQQ?e=nJhmKC" rel='noopener noreferrer'
-                                    target='_blank'>Télécharger mon CV en français</a></button>
+                                <a href="https://1drv.ms/b/s!AkHwqNuAoM_PjqU3aXbwrhuQX_oeOQ?e=rq55Ha" rel='noopener noreferrer'
+                                    target='_blank'><button className='btn btnCV'>Download my CV in English</button></a>
+                                <img className='pdf-image' src={require('./pdf-image.jpg')} style={{ maxWidth: '300px' }} alt='PDF-logo' />
+                                <a href="https://1drv.ms/b/s!AkHwqNuAoM_PjqU409Ol9MBCi_SrQQ?e=nJhmKC" rel='noopener noreferrer'
+                                    target='_blank'><button className='btn btnCV'>Télécharger mon CV en français</button></a>
                             </div>
                         </div>
                     </div>
