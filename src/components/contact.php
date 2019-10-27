@@ -1,35 +1,22 @@
-
 <?php
-header("Access-Control-Allow-Origin: *");
 
-$rest_json = file_get_contents("php://input");
-$_POST = json_decode($rest_json, true);
+$userName = $_POST['name'];
+$userEmail = $_POST['email'];
+$userMessage = $_POST['message'];
 
-if (empty($_POST['name']) && empty($_POST['email'])) die();
+$emailFrom = 'james_ross@outlook.fr';
 
-if ($_POST) {
+$emailSubject = 'New Message From Visitor';
+$emailBody = 'Visitor Name: $userName.\n'.
+'Visitor Email: $userEmail.\n'.
+'Visitor Telephone: $userPhone.\n'. 
+'Message: $userMessage.\n';
 
-  // set response code - 200 OK
-  http_response_code(200);
-  $subject = $_POST['name'];
-  $to = "james_ross@outlook.fr";
-  $from = $_POST['email'];
+$emailTo = 'james_ross@outlook.fr';
 
-  $msg = $_POST['message'];
+$headers = 'From: $emailFrom \r\n';
+$headers .= 'Reply-To: $userEmail \r\n';
 
-  // Headers
-  $headers = "MIME-Version: 1.0\r\n";
-  $headers .= "Content-type: text/html; charset=UTF-8\r\n";
-  $headers .= "From: <" . $from . ">";
-  mail($to, $subject, $msg, $headers);
+mail($emailTo,$emailSubject,$emailBody,$headers);
 
-  // echo json_encode( $_POST );
-  echo json_encode(array(
-    "sent" => true
-  ));
-} else {
-
-  // tell the user of error
-  echo json_encode(["sent" => false, "message" => "Something went wrong"]);
-}
-?>
+header('Location: index.js');
