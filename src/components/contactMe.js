@@ -1,8 +1,38 @@
 import React, { Component } from 'react';
 // import { List, ListItem, ListItemContent } from 'react-mdl';
+import axios from 'axios';
 
 class ContactMe extends Component {
+
+    constructor(props) {
+        super(props)
+
+        this.state = {
+            name: '',
+            email: '',
+            message: '',
+        }
+    }
+
+    changeHandler = e => {
+        this.setState({ [e.target.name]: e.target.value })
+    }
+
+    submitHandler = e => {
+        e.preventDefault()
+        console.log(this.state)
+        axios
+            .post('https://jsonplaceholder.typicode.com/posts', this.state)
+            .then(response => {
+                console.log(response)
+            })
+            .catch(error => {
+                console.log(error)
+            })
+    }
+
     render() {
+        const { name, email, message } = this.state
         return (
             <div className='contact-body'>
                 <div className='contact-grid'>
@@ -21,16 +51,26 @@ class ContactMe extends Component {
                     </div>
                     <div className='contact-right'>
                         <div className='contact-side'>
-                            <h2 style={{ fontSize: '25px', fontFamily: 'Anton', paddingTop: '10px'}}>
+                            <h2 style={{ fontSize: '25px', fontFamily: 'Anton', paddingTop: '10px' }}>
                                 Contact Me
                         </h2>
                             <hr />
                             <div className='contact-list'>
                                 <div className='form'>
-                                    <form action="contact.php" method='post'>
-                                        <input type="text" name="name" placeholder="Your name..." />
-                                        <input type="email" name="email" placeholder="Your email..." />
-                                        <textarea name="message" placeholder="Message me..."></textarea>
+                                    {/* <form action="/contact.php" method='post'> */}
+                                    <form onSubmit={this.submitHandler}>
+                                        <input type="text"
+                                            name="name" placeholder="Your name..."
+                                            value={name}
+                                            onChange={this.changeHandler} />
+                                        <input type="email"
+                                            name="email" placeholder="Your email..."
+                                            value={email}
+                                            onChange={this.changeHandler} />
+                                        <textarea name="message"
+                                            placeholder="Message me..."
+                                            value={message}
+                                            onChange={this.changeHandler}></textarea>
                                         <input type="submit" value="Submit" />
                                     </form>
                                 </div>
