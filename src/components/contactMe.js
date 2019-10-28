@@ -1,35 +1,62 @@
 import React, { Component } from 'react';
 // import { List, ListItem, ListItemContent } from 'react-mdl';
-import axios from 'axios';
+
+
+// ATTEMPT USING NODEMAILER
+// var nodemailer = require('nodemailer');
+
+// var transporter = nodemailer.createTransport({
+//     service: 'outlook',
+//     auth: {
+//         user: 'james_ross@outlook.fr',
+//         pass: 'emails1uk'
+//     }
+// });
+
+// var mailOptions = {
+//     from: '',
+//     to: '',
+//     subject: '',
+//     text: ``
+// };
+
+// transporter.sendMail(mailOptions, function (error, info) {
+//     if (error) {
+//         console.log(error);
+//     } else {
+//         console.log('Email sent: ' + info.response);
+//     }
+// });
 
 class ContactMe extends Component {
+    // ATTEMPT USING NODEMAILER 
+    // import axios from 'axios';
+    // constructor(props) {
+    //     super(props)
 
-    constructor(props) {
-        super(props)
+    //     this.state = {
+    //         name: '',
+    //         email: '',
+    //         message: '',
+    //     }
+    // }
 
-        this.state = {
-            name: '',
-            email: '',
-            message: '',
-        }
-    }
+    // changeHandler = e => {
+    //     this.setState({ [e.target.name]: e.target.value })
+    // }
 
-    changeHandler = e => {
-        this.setState({ [e.target.name]: e.target.value })
-    }
-
-    submitHandler = e => {
-        e.preventDefault()
-        console.log(this.state)
-        axios
-            .post('https://jsonplaceholder.typicode.com/posts', this.state)
-            .then(response => {
-                console.log(response)
-            })
-            .catch(error => {
-                console.log(error)
-            })
-    }
+    // submitHandler = e => {
+    //     e.preventDefault()
+    //     console.log(this.state)
+    //     axios
+    //         .post('https://jsonplaceholder.typicode.com/posts', this.state)
+    //         .then(response => {
+    //             console.log(response)
+    //         })
+    //         .catch(error => {
+    //             console.log(error)
+    //         })
+    // }
 
     render() {
         const { name, email, message } = this.state
@@ -57,6 +84,7 @@ class ContactMe extends Component {
                             <hr />
                             <div className='contact-list'>
                                 <div className='form'>
+                                    {/* ATTEMPT USING PHP */}
                                     {/* <form action="/contact.php" method='post'> */}
                                     <form onSubmit={this.submitHandler}>
                                         <input type="text"
