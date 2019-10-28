@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // import { List, ListItem, ListItemContent } from 'react-mdl';
-
+import axios from 'axios';
 
 // ATTEMPT USING NODEMAILER
 // var nodemailer = require('nodemailer');
@@ -8,8 +8,8 @@ import React, { Component } from 'react';
 // var transporter = nodemailer.createTransport({
 //     service: 'outlook',
 //     auth: {
-//         user: 'james_ross@outlook.fr',
-//         pass: 'emails1uk'
+//         user: 'email ',
+//         pass: 'password '
 //     }
 // });
 
@@ -29,34 +29,34 @@ import React, { Component } from 'react';
 // });
 
 class ContactMe extends Component {
-    // ATTEMPT USING NODEMAILER 
-    // import axios from 'axios';
-    // constructor(props) {
-    //     super(props)
 
-    //     this.state = {
-    //         name: '',
-    //         email: '',
-    //         message: '',
-    //     }
-    // }
 
-    // changeHandler = e => {
-    //     this.setState({ [e.target.name]: e.target.value })
-    // }
+    constructor(props) {
+        super(props)
 
-    // submitHandler = e => {
-    //     e.preventDefault()
-    //     console.log(this.state)
-    //     axios
-    //         .post('https://jsonplaceholder.typicode.com/posts', this.state)
-    //         .then(response => {
-    //             console.log(response)
-    //         })
-    //         .catch(error => {
-    //             console.log(error)
-    //         })
-    // }
+        this.state = {
+            name: '',
+            email: '',
+            message: '',
+        }
+    }
+
+    changeHandler = e => {
+        this.setState({ [e.target.name]: e.target.value })
+    }
+
+    submitHandler = e => {
+        e.preventDefault()
+        console.log(this.state)
+        axios
+            .post('https://jsonplaceholder.typicode.com/posts', this.state)
+            .then(response => {
+                console.log(response)
+            })
+            .catch(error => {
+                console.log(error)
+            })
+    }
 
     render() {
         const { name, email, message } = this.state
