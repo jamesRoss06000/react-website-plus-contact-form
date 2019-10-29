@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import { List, ListItem, ListItemContent } from 'react-mdl';
+import { List, ListItem, ListItemContent } from 'react-mdl';
 // import axios from 'axios';
 
 // ATTEMPT USING NODEMAILER
@@ -77,7 +77,7 @@ class ContactMe extends Component {
     }
 
     render() {
-        const { name, email, message } = this.state
+        // const { name, email, message } = this.state
         return (
             <div className='contact-body'>
                 <div className='contact-grid'>
@@ -101,10 +101,10 @@ class ContactMe extends Component {
                         </h2>
                             <hr />
                             <div className='contact-list'>
-                                <div className='form'>
+                                {/* <div className='form'> */}
                                     {/* ATTEMPT USING PHP */}
                                     {/* <form action="/contact.php" method='post'> */}
-                                    <form onSubmit={this.submitHandler} encType='multipart/form-data'>
+                                    {/* <form onSubmit={this.submitHandler} encType='multipart/form-data'>
                                         <input type="text"
                                             name="name" placeholder="Your name..."
                                             value={name}
@@ -119,8 +119,8 @@ class ContactMe extends Component {
                                             onChange={this.changeHandler}></textarea>
                                         <input type="submit" value="Submit" />
                                     </form>
-                                </div>
-                                {/* <List>
+                                </div> */}
+                                <List>
                                     <ListItem>
                                         <ListItemContent style={{ fontSize: '25px', fontFamily: 'Anton' }}>
                                             <a style={{ color: 'white', textDecoration: 'none' }} href='/'><img src='https://i.ibb.co/jwHSyd0/email-1.png' alt='email' />
@@ -139,7 +139,7 @@ class ContactMe extends Component {
                                                 github.com</a>
                                         </ListItemContent>
                                     </ListItem>
-                                </List> */}
+                                </List>
                             </div>
                         </div>
                     </div>

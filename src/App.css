@@ -282,7 +282,7 @@ input[type=submit]:hover {
         margin-bottom: 10px;
     }
     .gridDirection {
-        width: 85%;
+        width: 87%;
         padding: 10px;
         justify-content: center;
     }
@@ -308,11 +308,12 @@ input[type=submit]:hover {
     .contact-grid p {
         padding-bottom: 20px;
     }
-    .contact-right, .contact-right {
+    .contact-left, .contact-right {
         width: 90%;
     }
 }
     @media only screen and (max-width: 850px) {
+
         .social-links a {
             padding: 5px;
         }
@@ -336,6 +337,11 @@ input[type=submit]:hover {
         }
     }
     @media only screen and (max-width: 500px) {
+
+        .gridDirection {
+            width: 90%;
+        }
+
         .form input[type=text], input[type=email], select, textarea, input[type=submit] {
             width: 90%;
         }
