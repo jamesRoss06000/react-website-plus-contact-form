@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // import { List, ListItem, ListItemContent } from 'react-mdl';
-import axios from 'axios';
+// import axios from 'axios';
 
 // ATTEMPT USING NODEMAILER
 // var nodemailer = require('nodemailer');
@@ -48,14 +48,32 @@ class ContactMe extends Component {
     submitHandler = e => {
         e.preventDefault()
         console.log(this.state)
-        axios
-            .post('https://jsonplaceholder.typicode.com/posts', this.state)
-            .then(response => {
-                console.log(response)
-            })
-            .catch(error => {
-                console.log(error)
-            })
+        
+        const mailgun = require("mailgun-js");
+        const API_KEY = 'e42c2b2002d191fa3e8e83f83a95f314-816b23ef-8179526f';
+        const DOMAIN = 'https://api.mailgun.net/v3/sandboxc5ae022412ed448b873d5766d05570b7.mailgun.org';;
+       
+        const mg = mailgun({apiKey: API_KEY, domain: DOMAIN});
+        const data = {
+            from: this.state.email,
+            to: 'james_ross@outlook.fr',
+            subject: 'Email from' + this.state.name,
+            text: this.state.message,
+        };
+        mg.messages().send(data, function (error, body) {
+            console.log(body);
+        });
+        
+
+
+        // axios
+        //     .post('https://jsonplaceholder.typicode.com/posts', this.state)
+        //     .then(response => {
+        //         console.log(response.data)
+        //     })
+        //     .catch(error => {
+        //         console.log(error)
+        //     })
     }
 
     render() {
@@ -86,7 +104,7 @@ class ContactMe extends Component {
                                 <div className='form'>
                                     {/* ATTEMPT USING PHP */}
                                     {/* <form action="/contact.php" method='post'> */}
-                                    <form onSubmit={this.submitHandler}>
+                                    <form onSubmit={this.submitHandler} encType='multipart/form-data'>
                                         <input type="text"
                                             name="name" placeholder="Your name..."
                                             value={name}
