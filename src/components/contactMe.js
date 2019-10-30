@@ -1,83 +1,43 @@
 import React, { Component } from 'react';
 import { List, ListItem, ListItemContent } from 'react-mdl';
-// import axios from 'axios';
-
-// ATTEMPT USING NODEMAILER
-// var nodemailer = require('nodemailer');
-
-// var transporter = nodemailer.createTransport({
-//     service: 'outlook',
-//     auth: {
-//         user: 'email ',
-//         pass: 'password '
-//     }
-// });
-
-// var mailOptions = {
-//     from: '',
-//     to: '',
-//     subject: '',
-//     text: ``
-// };
-
-// transporter.sendMail(mailOptions, function (error, info) {
-//     if (error) {
-//         console.log(error);
-//     } else {
-//         console.log('Email sent: ' + info.response);
-//     }
-// });
 
 class ContactMe extends Component {
-
-
     constructor(props) {
         super(props)
-
         this.state = {
             name: '',
             email: '',
             message: '',
         }
     }
+    // changeHandler = e => {
+    //     this.setState({ [e.target.name]: e.target.value })
+    // }
+    // submitHandler = e => {
+    //     e.preventDefault()
+    //     console.log(this.state)
 
-    changeHandler = e => {
-        this.setState({ [e.target.name]: e.target.value })
-    }
+    //     var api_key = 'e42c2b2002d191fa3e8e83f83a95f314-816b23ef-8179526f';
+    //     var domain = 'https://api.mailgun.net/v3/sandboxc5ae022412ed448b873d5766d05570b7.mailgun.org';
+    //     var mailgun = require('mailgun-js')({ apiKey: api_key, domain: domain });
 
-    submitHandler = e => {
-        e.preventDefault()
-        console.log(this.state)
-        
-        const mailgun = require("mailgun-js");
-        const API_KEY = 'e42c2b2002d191fa3e8e83f83a95f314-816b23ef-8179526f';
-        const DOMAIN = 'https://api.mailgun.net/v3/sandboxc5ae022412ed448b873d5766d05570b7.mailgun.org';;
-       
-        const mg = mailgun({apiKey: API_KEY, domain: DOMAIN});
-        const data = {
-            from: this.state.email,
-            to: 'james_ross@outlook.fr',
-            subject: 'Email from' + this.state.name,
-            text: this.state.message,
-        };
-        mg.messages().send(data, function (error, body) {
-            console.log(body);
-        });
-        
+    //     var data = {
+    //         from: this.state.email,
+    //         to: 'james_ross@outlook.fr',
+    //         subject: 'Email from' + this.state.name,
+    //         text: this.state.message
+    //     };
 
-
-        // axios
-        //     .post('https://jsonplaceholder.typicode.com/posts', this.state)
-        //     .then(response => {
-        //         console.log(response.data)
-        //     })
-        //     .catch(error => {
-        //         console.log(error)
-        //     })
-    }
+    //     mailgun.messages().send(data, function (error, body) {
+    //         if (error){
+    //             console.log(error);
+    //         }
+    //         console.log(body);
+    //     });
+    // }
 
     render() {
-        // const { name, email, message } = this.state
+        const { name, email, message } = this.state
         return (
             <div className='contact-body'>
                 <div className='contact-grid'>
@@ -102,9 +62,9 @@ class ContactMe extends Component {
                             <hr />
                             <div className='contact-list'>
                                 {/* <div className='form'> */}
-                                    {/* ATTEMPT USING PHP */}
-                                    {/* <form action="/contact.php" method='post'> */}
-                                    {/* <form onSubmit={this.submitHandler} encType='multipart/form-data'>
+                                {/* ATTEMPT USING PHP */}
+                                {/* <form action="/contact.php" method='post'> */}
+                                {/* <form onSubmit={this.submitHandler} encType='multipart/form-data'>
                                         <input type="text"
                                             name="name" placeholder="Your name..."
                                             value={name}
