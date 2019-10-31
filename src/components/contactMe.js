@@ -1,40 +1,64 @@
 import React, { Component } from 'react';
-import { List, ListItem, ListItemContent } from 'react-mdl';
+import firebase from 'firebase';
+
+const firebaseConfig = {
+    apiKey: process.env.REACT_APP_FIREBASE_KEY,
+    authDomain: process.env.REACT_APP_FIREBASE_DOMAIN,
+    databaseURL: 'https://react-website-afe39.firebaseio.com',
+    projectId: process.env.REACT_APP_FIREBASE_PROJEDT_ID,
+    storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_FIREBASE_SENDER_ID,
+    appId: "1:476724951106:web:36614d88723afae86215db",
+    measurementId: "G-FW123H0Q4P"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
+let messageRef = firebase.database().ref('messages');
 
 class ContactMe extends Component {
     constructor(props) {
         super(props)
+        this.submitHandler = this.submitHandler.bind(this);
+
         this.state = {
             name: '',
             email: '',
             message: '',
         }
     }
-    // changeHandler = e => {
-    //     this.setState({ [e.target.name]: e.target.value })
-    // }
-    // submitHandler = e => {
-    //     e.preventDefault()
-    //     console.log(this.state)
 
-    //     var api_key = 'e42c2b2002d191fa3e8e83f83a95f314-816b23ef-8179526f';
-    //     var domain = 'https://api.mailgun.net/v3/sandboxc5ae022412ed448b873d5766d05570b7.mailgun.org';
-    //     var mailgun = require('mailgun-js')({ apiKey: api_key, domain: domain });
+    changeHandler = e => {
+        this.setState({ [e.target.name]: e.target.value })
+    }
+    submitHandler = e => {
+        e.preventDefault()
 
-    //     var data = {
-    //         from: this.state.email,
-    //         to: 'james_ross@outlook.fr',
-    //         subject: 'Email from' + this.state.name,
-    //         text: this.state.message
-    //     };
+        let from = this.state.email;
+        let to = 'james_ross@outlook.fr';
+        let subject = 'Email from ' + this.state.name;
+        let text = this.state.message;
 
-    //     mailgun.messages().send(data, function (error, body) {
-    //         if (error){
-    //             console.log(error);
-    //         }
-    //         console.log(body);
-    //     });
-    // }
+        function saveMessage(from, to, subject, text) {
+            let newMessageRef = messageRef.push();
+            newMessageRef.set({
+                from,
+                to,
+                subject,
+                text
+            })
+        }
+        saveMessage(from, to, subject, text);
+        // alert syaing message sent for 3 secinds
+        document.querySelector('.alert').style.display = 'block';
+        setTimeout(function () {
+            document.querySelector('.alert').style.display = 'none';
+        }, 3000);
+        // Clear inout boxes after message sent
+        document.getElementById('formName').value = '';
+        document.getElementById('formEmail').value = '';
+        document.getElementById('formText').value = '';
+    }
 
     render() {
         const { name, email, message } = this.state
@@ -61,26 +85,33 @@ class ContactMe extends Component {
                         </h2>
                             <hr />
                             <div className='contact-list'>
-                                {/* <div className='form'> */}
-                                {/* ATTEMPT USING PHP */}
-                                {/* <form action="/contact.php" method='post'> */}
-                                {/* <form onSubmit={this.submitHandler} encType='multipart/form-data'>
+                                <div className='form'>
+                                    <div className='alert'>Your message has been sent</div>
+                                    {/* ATTEMPT USING PHP */}
+                                    {/* <form action="/contact.php" method='post'> */}
+                                    <form onSubmit={this.submitHandler} encType='multipart/form-data'>
                                         <input type="text"
                                             name="name" placeholder="Your name..."
                                             value={name}
-                                            onChange={this.changeHandler} />
+                                            onChange={this.changeHandler}
+                                            id='formName'
+                                            required />
                                         <input type="email"
                                             name="email" placeholder="Your email..."
                                             value={email}
-                                            onChange={this.changeHandler} />
+                                            onChange={this.changeHandler}
+                                            id='formEmail'
+                                            required />
                                         <textarea name="message"
                                             placeholder="Message me..."
                                             value={message}
-                                            onChange={this.changeHandler}></textarea>
+                                            onChange={this.changeHandler}
+                                            id='formText'
+                                            required></textarea>
                                         <input type="submit" value="Submit" />
                                     </form>
-                                </div> */}
-                                <List>
+                                </div>
+                                {/* <List>
                                     <ListItem>
                                         <ListItemContent style={{ fontSize: '25px', fontFamily: 'Anton' }}>
                                             <a style={{ color: 'white', textDecoration: 'none' }} href='/'><img src='https://i.ibb.co/jwHSyd0/email-1.png' alt='email' />
@@ -99,7 +130,7 @@ class ContactMe extends Component {
                                                 github.com</a>
                                         </ListItemContent>
                                     </ListItem>
-                                </List>
+                                </List> */}
                             </div>
                         </div>
                     </div>
@@ -108,5 +139,14 @@ class ContactMe extends Component {
         )
     }
 }
+
+// function saveMessage( email, message) {
+//     let newMessageRef = messageRef.push();
+//     newMessageRef.set({
+//         name,
+//         email,
+//         message,
+//     })
+// }
 
 export default ContactMe;
