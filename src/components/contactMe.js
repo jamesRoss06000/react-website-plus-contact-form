@@ -5,12 +5,12 @@ require('dotenv').config()
 const firebaseConfig = {
     apiKey: process.env.REACT_APP_FIREBASE_KEY,
     authDomain: process.env.REACT_APP_FIREBASE_DOMAIN,
-    databaseURL: "https://react-website-db.firebaseio.com",
+    databaseURL: "https://react-my-website.firebaseio.com",
     projectId: process.env.REACT_APP_FIREBASE_PROJEDT_ID,
     storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
     messagingSenderId: process.env.REACT_APP_FIREBASE_SENDER_ID,
-    appId: "1:434736128047:web:f48a5acc6dbd7a78aba6da",
-    measurementId: "G-CRFG7XHZN6"
+    appId: "1:1089446550486:web:1855acb39dc11618b7e277",
+    measurementId: "G-N3KHE821PD"
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
