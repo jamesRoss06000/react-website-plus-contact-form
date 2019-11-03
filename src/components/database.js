@@ -53,16 +53,8 @@ let database = [
     image: 'url(https://i.ibb.co/DYdK9G0/reactjs.png) center / cover',
     description: 'This website was built using ReactJS. Take a look around, see what you think.',
     languages: 'frameworks',
-    github: 'https://github.com/jamesRoss06000/react-website',
+    github: 'https://github.com/jamesRoss06000/react-website-plus-contact-form',
     live: 'jamesross.tech/'
-  },
-  {
-    name: 'To-do-list',
-    image: 'url(https://i.ibb.co/DYdK9G0/reactjs.png) center / cover',
-    description: 'Web app built using ReactJS, includes local storage so can used.',
-    languages: 'frameworks',
-    github: 'https://github.com/jamesRoss06000/to-do-list-react-js',
-    live: 'https://jamesross06000.github.io/to-do-list-react-js/'
   },
   {
     name: 'Tabata',
@@ -71,6 +63,14 @@ let database = [
     languages: 'frameworks',
     github: 'https://github.com/jamesRoss06000/Tabata',
     live: 'https://jamesross06000.github.io/Tabata/home'
+  },
+  {
+    name: 'To-do-list',
+    image: 'url(https://i.ibb.co/DYdK9G0/reactjs.png) center / cover',
+    description: 'Web app built using ReactJS, includes local storage so can used.',
+    languages: 'frameworks',
+    github: 'https://github.com/jamesRoss06000/to-do-list-react-js',
+    live: 'https://jamesross06000.github.io/to-do-list-react-js/'
   },
   {
     name: 'Online CV Example',
