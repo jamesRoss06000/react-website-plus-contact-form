@@ -76,37 +76,39 @@ class ContactMe extends Component {
                     <h2 id='signature' style={{ fontSize: '25px' }}>
                         James Ross
                         </h2>
-                    <div className='contact-side'>
-                        <h2 style={{ fontSize: '25px', fontFamily: 'Anton' }}>
+                    {/* <div className='contact-side'> */}
+
+                    <div className='contact-list'>
+                        {/* <h2 style={{ fontSize: '18px', fontFamily: 'Anton' }}>
                             Contact Me
-                        </h2>
-                        <div className='contact-list'>
-                            <div className='form'>
-                                <div className='alert'>Your message has been sent</div>
-                                <form onSubmit={this.submitHandler} encType='multipart/form-data'>
-                                    <input type="text"
-                                        name="name" placeholder="Your name..."
-                                        value={name}
-                                        onChange={this.changeHandler}
-                                        id='formName'
-                                        required />
-                                    <input type="email"
-                                        name="email" placeholder="Your email..."
-                                        value={email}
-                                        onChange={this.changeHandler}
-                                        id='formEmail'
-                                        required />
-                                    <textarea name="message"
-                                        placeholder="Message me..."
-                                        value={message}
-                                        onChange={this.changeHandler}
-                                        id='formText'
-                                        required></textarea>
-                                    <input type="submit" value="Submit" />
-                                </form>
-                            </div>
-                        </div>
+                        </h2> */}
+                        <input type="submit" value="Contact Me" disabled/>
+                        {/* <div className='form'> */}
+                            <div className='alert'>Your message has been sent</div>
+                            <form className='form' onSubmit={this.submitHandler} encType='multipart/form-data'>
+                                <input type="text"
+                                    name="name" placeholder="Your name..."
+                                    value={name}
+                                    onChange={this.changeHandler}
+                                    id='formName'
+                                    required />
+                                <input type="email"
+                                    name="email" placeholder="Your email..."
+                                    value={email}
+                                    onChange={this.changeHandler}
+                                    id='formEmail'
+                                    required />
+                                <textarea name="message"
+                                    placeholder="Message me..."
+                                    value={message}
+                                    onChange={this.changeHandler}
+                                    id='formText'
+                                    required></textarea>
+                                <input className='submit' type="submit" value="Submit" />
+                            </form>
+                        {/* </div> */}
                     </div>
+                    {/* </div> */}
                 </div>
             </div>
         )

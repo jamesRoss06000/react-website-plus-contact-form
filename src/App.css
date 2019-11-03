@@ -129,27 +129,19 @@ div.mdl-tabs__tab-bar {
     flex-direction: column;
     text-align: center;
     justify-content: baseline;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     border-radius: 15px;
+    height: 100%;
 }
 
-.contact-right, .contact-right {
+.contact-right {
     width: 50%;
 }
 
-.contact-side {
-    margin: auto;
-    height: 90vh;
-    background-color: black;
-    color: whitesmoke;
-    opacity: .7;
-    width: 90%;
-    border-radius: 10px;
-}
-
 .contact-list {
-    height: 80%;
-    background-color: black;
+    margin: auto;
+    height: 100%;
+    width: 90%;
     border-radius: 10px;
 }
 
@@ -246,40 +238,71 @@ button {
 }
 
 .form {
-    /* height: 100%; */
-    max-width: 420px;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    /* height: 80%; */
+    /* background-color: black;
+    color: whitesmoke; */
+    /* opacity: .7; */
+    width: 100%;
+    border-radius: 5px;
+    /* max-width: 420px; */
     padding-bottom: 25px;
-
 }
 
 .form input[type=text], input[type=email], select, textarea {
-    width: 100%;
+    width: 90%;
     padding: 12px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border: rgb(168, 168, 168) 1px solid;
+    border-radius: 5px;
     box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    /* resize: vertical; */
 }
 
 .form textarea {
-    height: 150px;
+    max-height: 200px;
+    margin-bottom: 6px;
+}
+
+.contact-list h2 {
+    text-align: center;
+    background-color: black;
+    color: whitesmoke;
+    opacity: .7;
+    width: 90%;
+    border-radius: 5px;
+    margin: auto;
+    margin-bottom: 4px;
+    height:40px;
+    vertical-align: 10px;
 }
 
 input[type=submit] {
-    width: 100%;
-    background-color: rgb(184, 185, 184);
-    color: black;
     padding: 12px 20px;
     border: none;
-    border-radius: 4px;
+    margin-top: 4px;
+    /* border-radius: 4px; */
     cursor: pointer;
+    background-color: black;
+    color: whitesmoke;
+    opacity: .7;
+    width: 90%;
+    border-radius: 5px;
+    margin: auto;
+    margin-bottom: 4px;
+    font-family: 'Anton';
+    font-size: 18px;
+    height:40px;
 }
 
-input[type=submit]:hover {
+.submit input[type=submit]:hover {
     background-color: #45a049;
+    border: rgb(129, 129, 129) 1px solid;
 }
 
 .alert {
@@ -320,7 +343,7 @@ input[type=submit]:hover {
         align-items: center;
     }
     .contact-grid h2 {
-        padding: 20px;
+        padding: 10px;
     }
     .contact-left, .contact-right {
         width: 90%;
@@ -328,11 +351,9 @@ input[type=submit]:hover {
 }
 
 @media only screen and (max-width: 850px) {
-
     .banner-text h2 {
         margin-bottom: 0;
     }
-
     .social-links a {
         padding: 5px;
     }
@@ -387,9 +408,29 @@ input[type=submit]:hover {
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 400px) {
     .myAvatar {
         height: 230px;
         margin-top: 5px;
+    }
+    .form textarea {
+        min-height: 100px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .form textarea {
+        min-height: 70px;
+    }
+    .form input[type=text], input[type=email], select, textarea {
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        max-height: 16px;
+    }
+    .form input[type=submit] {
+        margin-top: 4px;
     }
 }
