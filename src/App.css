@@ -139,12 +139,17 @@ div.mdl-tabs__tab-bar {
 
 .contact-side {
     margin: auto;
-    min-height: 600px;
-    height: 100%;
+    height: 90vh;
     background-color: black;
     color: whitesmoke;
     opacity: .7;
     width: 90%;
+    border-radius: 10px;
+}
+
+.contact-list {
+    height: 80%;
+    background-color: black;
     border-radius: 10px;
 }
 
@@ -153,22 +158,11 @@ div.mdl-tabs__tab-bar {
     font-weight: bold;
 }
 
-.contact-grid hr {
-    border-top: 2px solid black;
-    width: 50%;
-    margin: auto;
-}
-
 .contact-grid h2 {
     font-family: 'Pacifico', cursive;
     margin-top: 0;
     margin-bottom: 0;
     padding: 10px 0px;
-}
-
-.contact-list ul li {
-    display: flex;
-    padding: 15px;
 }
 
 .mdl-list__item-primary-content img {
@@ -256,6 +250,7 @@ button {
     max-width: 420px;
     margin: 0 auto;
     padding-bottom: 25px;
+
 }
 
 .form input[type=text], input[type=email], select, textarea {
