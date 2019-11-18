@@ -57,6 +57,14 @@ let database = [
     live: 'jamesross.tech/'
   },
   {
+    name: 'Instant Message App',
+    image: 'url(https://i.ibb.co/NLts3S7/message-app.png) center / cover',
+    description: 'Simple ReactJS and Firebase instant messaging app.',
+    languages: 'frameworks',
+    github: 'https://github.com/jamesRoss06000/message-app',
+    live: 'https://jamesross06000.github.io/message-app/'
+  },
+  {
     name: 'Tabata',
     image: 'url(https://i.ibb.co/Tt1FYTr/tabata.png) center / cover',
     description: 'Under construction: Ionic Angular mobile app for gym goers.',
