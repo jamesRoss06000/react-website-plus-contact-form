@@ -13,7 +13,7 @@ class LandingPage extends Component {
                             <img src="https://i.ibb.co/3c5K4Cy/MAD-4864.jpg"
                                 alt="James-ROSS-couleurs" border="0" className='myAvatar' />
                             <h1>James Ross</h1>
-                            <h2>Full Stack Web Developer</h2>
+                            <h2>Web Developer</h2>
                             <br className='hideSpan'></br>
                             <span>HTML/CSS</span><span className='showSpan'>|</span>
                             <br className='hideSpan'></br>
