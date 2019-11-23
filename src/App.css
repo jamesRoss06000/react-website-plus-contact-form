@@ -11,6 +11,10 @@ a.mdl-navigation__link {
     font-size: 30px;
 }
 
+a.mdl-layout__header-row a.mdl-navigation__link {
+    color: black;
+}
+
 .landing-grid {
     background: #757F9A;
     /* fallback for old browsers */
@@ -96,8 +100,7 @@ a.mdl-navigation__link {
 
 .social-links a {
     padding: 13px;
-    width: 50px;
-    height: 50px;
+    width: 100px;
     color: whitesmoke;
 }
 
@@ -176,10 +179,12 @@ h4 {
     margin: auto;
 }
 
-.leftSide {
+.aboutMe {
+    display: flex;
+    /* justify-content: space-around; */
     width: 85%;
     font-family: 'oxygen', sans-serif;
-    text-align: center;
+    text-align: left;
     color: black;
     height: 100%;
     background-color: whitesmoke;
@@ -190,11 +195,39 @@ h4 {
     margin-bottom: 17px;
 }
 
+.seeMore {
+    background-color: whitesmoke;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.skillsListed {
+    width: 60%;
+    padding: 0px 10px;
+}
+
+.myPast {
+    width: 39%;
+    padding: 0px 10px;
+}
+
+.projectExamplesDiv {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.moreProjectsBtn {
+    height: 50px;
+    margin: 10px 0px;
+}
+
 .gridDirection p {
     font-size: 18px;
 }
 
-.rightSide {
+.cvContainer {
     padding: 10px;
     max-height: 150px;
     background-color: black;
@@ -284,7 +317,7 @@ button {
     border-radius: 5px;
     margin: auto;
     margin-bottom: 4px;
-    height:40px;
+    height: 40px;
     vertical-align: 10px;
 }
 
@@ -301,7 +334,7 @@ input[type=submit] {
     margin-bottom: 4px;
     font-family: 'Anton';
     font-size: 18px;
-    height:40px;
+    height: 40px;
 }
 
 .submit input[type=submit]:hover {
@@ -316,13 +349,25 @@ input[type=submit] {
     padding: 10px;
     color: whitesmoke;
     display: none;
-    width:90%;
+    width: 90%;
     margin: auto;
 }
 
+.mdl-layout__drawer-button, .mdl-layout__header-row .mdl-navigation__link {
+    color: rgb(27, 27, 27) !important;
+}
+
 @media only screen and (max-width: 1050px) {
+    .projectExamplesDiv {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .seeMore {
+        width: 100%;
+        margin-top: 0px;
+    }
     .banner-text {
-        width: 85%;
+        width: 90%;
         margin-bottom: 10px;
     }
     .gridDirection {
@@ -334,13 +379,17 @@ input[type=submit] {
         width: 100%;
         margin: auto;
     }
-    .rightSide {
+    .cvContainer {
         width: 100%;
         padding: 10px;
     }
-    .leftSide {
+    .aboutMe {
+        flex-direction: column;
         width: 100%;
         padding: 10px;
+    }
+    .skillsListed, .myPast {
+        width: 100%
     }
     .contact-grid {
         padding-top: 15px;

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Cell } from 'react-mdl';
+import ExampleProjects from './exampleProjects'
+import { Link } from 'react-router-dom';
 // import Work from './work.js';
 // import Education from './education.js';
 
@@ -13,30 +15,7 @@ class LandingPage extends Component {
                             <img src="https://i.ibb.co/3c5K4Cy/MAD-4864.jpg"
                                 alt="James-ROSS-couleurs" border="0" className='myAvatar' />
                             <h1>James Ross</h1>
-                            <h2>Web Developer</h2>
-                            <br className='hideSpan'></br>
-                            <span>HTML/CSS</span><span className='showSpan'>|</span>
-                            <br className='hideSpan'></br>
-                            <br className='hideSpan'></br>
-                            <span>JavaScript</span><span className='showSpan'>|</span>
-                            <br className='hideSpan'></br>
-                            <br className='hideSpan'></br>
-                            <span>PHP</span><span className='showSpan'>|</span>
-                            <br className='hideSpan'></br>
-                            <br className='hideSpan'></br>
-                            <span>SQL</span><span className='showSpan'>|</span>
-                            <br className='hideSpan'></br>
-                            <br className='hideSpan'></br>
-                            <span>React</span><span className='showSpan'>|</span>
-                            <br className='hideSpan'></br>
-                            <br className='hideSpan'></br>
-                            <span>Ionic</span><span className='showSpan'>|</span>
-                            <br className='hideSpan'></br>
-                            <br className='hideSpan'></br>
-                            <span>Angular</span>
-                            <br className='hideSpan'></br>
-                            <br className='hideSpan'></br>
-
+                            <h2 style={{ marginBottom: '0px' }}>Web Developer</h2>
                             <div className='social-links'>
                                 {/* LinkedIn Logo */}
                                 <a href='https://www.linkedin.com/in/jamesross06000/' rel='noopener noreferrer' target='_blank'>
@@ -49,14 +28,33 @@ class LandingPage extends Component {
                         </div>
                     </Cell>
                     <div className='gridDirection' style={{ textAlign: 'center' }}>
-                        <div className='leftSide'>
-                            <u><p>A little about me...</p></u>
-                            <p>Web Developer, trained at 'La Grande Ecole du Numerique, Nice'</p>
-                            <p>Native English speaker. I speak French to level C1.</p>
-                            <p>Experienced in Planning, Management and Distribution.</p>
-                            <p>Writing hobbyist with several books published on <a style={{ color: 'black' }} href='https://www.amazon.com/Serial-Killer-Murder-Trilogy-English-ebook/dp/B00BE97ONM' target='_blank' rel="noopener noreferrer">Amazon.</a></p>
+                        <div className='aboutMe'>
+                            <div className='skillsListed'>
+                                <h4><strong>Languages, Framesworks and Tools used...</strong></h4>
+                                <p><strong>HTML & CSS & JavaScript</strong> for basic websites.</p>
+                                <p><strong>PHP & SQL with phpMyAdmin</strong> to create CRUD management systems.</p>
+                                <p><strong>React JS, Ionic & Angular</strong> for building dynamic single-page applications.</p>
+                                <p><strong>Firebase</strong> Real-Time Databases and cloud functions.</p>
+                                <p><strong>GitHub</strong> to safely store and/or share projects.</p>
+                                <p><strong>Heroku & GitHub Pages</strong> for deployment of in-development projects.</p>
+                            </div>
+                            <div className='myPast'>
+                                <h4><strong>A little about me...</strong></h4>
+                                <p><strong>Web Developer</strong>, trained at 'La Grande Ecole du Numerique, Nice'</p>
+                                <p>Native <strong>English speaker</strong>. I speak French to level C1.</p>
+                                <p>Experienced in Planning, Management and Distribution.</p>
+                                <p>Writing hobbyist with several books published on <a style={{ color: 'black' }} href='https://www.amazon.com/Serial-Killer-Murder-Trilogy-English-ebook/dp/B00BE97ONM' target='_blank' rel="noopener noreferrer">Amazon.</a></p>
+                            </div>
                         </div>
-                        <div className='rightSide'>
+                        <div className='projectExamplesDiv'>
+                        <ExampleProjects />
+                            <div className='seeMore' style={{width: '330px', marginTop: '10px'}}>
+                                <h4>A few of my projects...</h4>
+                                <h4>Want to see more?</h4>
+                            <Link to="/projects"><button className='btn btn-dark moreProjectsBtn'>Click here to see more projects...</button></Link>
+                            </div>
+                        </div>
+                        <div className='cvContainer'>
                             <div className='cvDiv'>
                                 <a href="https://1drv.ms/b/s!AkHwqNuAoM_PjqU3aXbwrhuQX_oeOQ?e=rq55Ha" rel='noopener noreferrer'
                                     target='_blank'><button className='btn btnCV'>Download my CV in English</button></a>
