@@ -44,6 +44,7 @@ a.mdl-layout__header-row a.mdl-navigation__link {
 
 .mdl-card {
     height: 450px;
+    min-width: 300px;
 }
 
 .myAvatar {
@@ -109,10 +110,6 @@ div.mdl-tabs__tab-bar {
     justify-content: space-around;
     align-items: baseline;
     height: 60px;
-}
-
-.mdl-card {
-    min-width: 300px;
 }
 
 .mdl-card__actions {
@@ -192,7 +189,7 @@ h4 {
     opacity: .7;
     padding: 10px;
     border-radius: 10px;
-    margin-bottom: 17px;
+    /* margin-bottom: 17px; */
 }
 
 .seeMore {
@@ -200,6 +197,7 @@ h4 {
     color: black;
     padding: 10px;
     border-radius: 10px;
+    height: 450px;
 }
 
 .skillsListed {
@@ -359,19 +357,20 @@ input[type=submit] {
 
 @media only screen and (max-width: 1050px) {
     .projectExamplesDiv {
-        flex-direction: column-reverse;
-        align-items: center;
+        display: inline-flex;
+        flex-wrap: wrap;
     }
     .seeMore {
         width: 100%;
         margin-top: 0px;
+        margin-right: 10px;
     }
     .banner-text {
         width: 90%;
         margin-bottom: 10px;
     }
     .gridDirection {
-        width: 87%;
+        width: 90%;
         padding: 10px;
         justify-content: center;
     }
@@ -431,9 +430,25 @@ input[type=submit] {
         display: flex;
         padding: 5px 15px 0px 15px;
     }
+
+    .mdl-card {
+        height: 450px;
+        width: 300px !important;
+    }
+
+    .seeMore {
+        width: 300px !important;
+    }
 }
 
 @media only screen and (max-width: 500px) {
+    .seeMore {
+        height: 225px;
+        margin-right: 0px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+
     .alert {
         margin: 0 auto 10px auto;
         width: 90%;
