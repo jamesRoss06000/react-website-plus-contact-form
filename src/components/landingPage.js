@@ -30,7 +30,7 @@ class LandingPage extends Component {
                     <div className='gridDirection' style={{ textAlign: 'center' }}>
                         <div className='aboutMe'>
                             <div className='skillsListed'>
-                                <h4><strong>Languages, Framesworks and Tools used...</strong></h4>
+                                <h4><strong>Languages, Frameworks and Tools used...</strong></h4>
                                 <p><strong>HTML & CSS & JavaScript</strong> for basic websites.</p>
                                 <p><strong>PHP & SQL with phpMyAdmin</strong> to create CRUD management systems.</p>
                                 <p><strong>React JS, Ionic & Angular</strong> for building dynamic single-page applications.</p>

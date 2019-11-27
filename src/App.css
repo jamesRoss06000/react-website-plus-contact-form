@@ -354,12 +354,15 @@ input[type=submit] {
 .mdl-layout__drawer-button, .mdl-layout__header-row .mdl-navigation__link {
     color: rgb(27, 27, 27) !important;
 }
+@media only screen and (max-width: 1450px) {
+    .projectExamplesDiv {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
 
 @media only screen and (max-width: 1050px) {
-    .projectExamplesDiv {
-        display: inline-flex;
-        flex-wrap: wrap;
-    }
+
     .seeMore {
         width: 100%;
         margin-top: 0px;
