@@ -1,4 +1,5 @@
-.header-color, .mdl-layout__content {
+.header-color,
+.mdl-layout__content {
     background: #757F9A;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #D7DDE8, #757F9A);
@@ -40,6 +41,7 @@ a.mdl-layout__header-row a.mdl-navigation__link {
 .cardDivs {
     margin: 10px;
     height: 450px;
+    text-align: left;
 }
 
 .mdl-card {
@@ -289,7 +291,10 @@ button {
     padding-bottom: 25px;
 }
 
-.form input[type=text], input[type=email], select, textarea {
+.form input[type=text],
+input[type=email],
+select,
+textarea {
     width: 90%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -351,9 +356,11 @@ input[type=submit] {
     margin: auto;
 }
 
-.mdl-layout__drawer-button, .mdl-layout__header-row .mdl-navigation__link {
+.mdl-layout__drawer-button,
+.mdl-layout__header-row .mdl-navigation__link {
     color: rgb(27, 27, 27) !important;
 }
+
 @media only screen and (max-width: 1450px) {
     .projectExamplesDiv {
         flex-wrap: wrap;
@@ -362,7 +369,6 @@ input[type=submit] {
 }
 
 @media only screen and (max-width: 1050px) {
-
     .seeMore {
         width: 100%;
         margin-top: 0px;
@@ -390,7 +396,8 @@ input[type=submit] {
         width: 100%;
         padding: 10px;
     }
-    .skillsListed, .myPast {
+    .skillsListed,
+    .myPast {
         width: 100%
     }
     .contact-grid {
@@ -403,7 +410,8 @@ input[type=submit] {
     .contact-grid h2 {
         padding: 10px;
     }
-    .contact-left, .contact-right {
+    .contact-left,
+    .contact-right {
         width: 90%;
     }
 }
@@ -433,12 +441,10 @@ input[type=submit] {
         display: flex;
         padding: 5px 15px 0px 15px;
     }
-
     .mdl-card {
         height: 450px;
         width: 300px !important;
     }
-
     .seeMore {
         width: 300px !important;
     }
@@ -451,7 +457,6 @@ input[type=submit] {
         margin-left: 10px;
         margin-bottom: 10px;
     }
-
     .alert {
         margin: 0 auto 10px auto;
         width: 90%;
@@ -459,7 +464,11 @@ input[type=submit] {
     .gridDirection {
         width: 90%;
     }
-    .form input[type=text], input[type=email], select, textarea, input[type=submit] {
+    .form input[type=text],
+    input[type=email],
+    select,
+    textarea,
+    input[type=submit] {
         width: 90%;
     }
     .cvDiv {
@@ -496,7 +505,10 @@ input[type=submit] {
     .form textarea {
         min-height: 70px;
     }
-    .form input[type=text], input[type=email], select, textarea {
+    .form input[type=text],
+    input[type=email],
+    select,
+    textarea {
         border: 1px solid #ccc;
         border-radius: 4px;
         box-sizing: border-box;
