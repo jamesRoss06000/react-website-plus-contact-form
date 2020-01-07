@@ -56,10 +56,10 @@ class LandingPage extends Component {
                         </div>
                         <div className='cvContainer'>
                             <div className='cvDiv'>
-                                <a href="https://1drv.ms/b/s!AkHwqNuAoM_PjqVXOpE7pVOLDQWZVA?e=CHxTNQ" rel='noopener noreferrer'
+                                <a href="https://1drv.ms/b/s!AkHwqNuAoM_PjqVep1KyLAzXw-n3NA" rel='noopener noreferrer'
                                     target='_blank'><button className='btn btnCV'>Download my CV in English</button></a>
                                 <img className='pdf-image' src={require('./pdf-image.jpg')} style={{ maxWidth: '300px' }} alt='PDF-logo' />
-                                <a href="https://1drv.ms/b/s!AkHwqNuAoM_PjqVYiVQHYLeNXRWG8w?e=lT5Vzy" rel='noopener noreferrer'
+                                <a href="https://1drv.ms/b/s!AkHwqNuAoM_PjqVdDf_CDu3V4itKZA" rel='noopener noreferrer'
                                     target='_blank'><button className='btn btnCV'>Télécharger mon CV en français</button></a>
                             </div>
                         </div>

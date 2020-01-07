@@ -1,11 +1,11 @@
 let exampleList = [
   {
-    name: 'Contact Form',
-    image: 'url(https://i.ibb.co/gZj19ZF/330x175contact-Form.png) center / cover',
-    description: 'Example contact form for a non-existing chinese restaurant. HTML, CSS.',
-    languages: 'HTML, CSS, JavaScript',
-    github: 'https://github.com/jamesRoss06000/contact-form',
-    live: 'https://contact-form-html-php.herokuapp.com/'
+    name: 'Dentist Website 2',
+      image: 'url(https://i.ibb.co/ZVxpGP8/dentist2image.png) center / cover',
+      description: 'Website: Angular 8 with *ngIf modal selection, NGX translate and GoogleMaps',
+      languages: 'frameworks',
+      github: 'https://github.com/jamesRoss06000/dentist2',
+      live: 'https://dentist-2-67fdf.firebaseapp.com/'
   },
   {
     name: 'CRUD System',
