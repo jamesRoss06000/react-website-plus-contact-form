@@ -1,4 +1,5 @@
-let database = [{
+let database = [
+    {
         name: 'Parallax Website',
         image: 'url(https://i.ibb.co/NxmsXCf/soask.png) center / cover',
         description: 'Personal project. A mock movie-pitch, read-only website created using HTML and CSS.',
@@ -102,6 +103,14 @@ let database = [{
         languages: 'HTML, CSS, JavaScript',
         github: 'https://github.com/jamesRoss06000/Online_CV',
         live: 'https://cv-example-project.herokuapp.com/'
+    },
+    {
+        name: 'Share Posts Website',
+        image: 'url(https://i.ibb.co/Mf77mJy/Capture.png) center / cover',
+        description: 'Share posts with other users: PHOP, MVC, OOP Udemy course project',
+        languages: 'HTML, CSS, JavaScript',
+        github: 'https://github.com/jamesRoss06000/share-posts-php-mvc',
+        live: 'https://share-posts-php-mvc.herokuapp.com/'
     }
 ]
 
