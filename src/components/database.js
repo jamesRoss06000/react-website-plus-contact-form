@@ -108,7 +108,7 @@ let database = [
         name: 'Share Posts Website',
         image: 'url(https://i.ibb.co/Mf77mJy/Capture.png) center / cover',
         description: 'Share posts with other users: PHOP, MVC, OOP Udemy course project',
-        languages: 'HTML, CSS, JavaScript',
+        languages: 'PHP, SQL',
         github: 'https://github.com/jamesRoss06000/share-posts-php-mvc',
         live: 'https://share-posts-php-mvc.herokuapp.com/'
     }
